@@ -1,0 +1,26 @@
+---------- 쿼리 ------------
+use  deu;
+
+create  table user3 (
+	no 		int			not null auto_increment primary key,
+	name		varchar(100)	not null,
+	email		varchar(200)	null,
+	pwd		varchar(100)	not null,
+	gender	boolean		not null default 1,
+	del		boolean		not null default 0,
+	regDate 	datetime		not null default now()
+);
+
+commit;
+
+------------------------
+정보 
+	- MYSQL_HOST=localhost
+        - MYSQL_PORT=3306
+        - MYSQL_ROOT_PASSWORD=1234
+        - MYSQL_DATABASE=edu
+        - MYSQL_USER=folder
+        - MYSQL_PASSWORD=1234
+
+
+
